@@ -298,7 +298,7 @@ toolbar plus both panes. Last in the logic chain because it depends on every hoo
 
 ## Task 9: GFM styling, theme tokens, and anti-FOUC pre-paint script
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/styles/markdown.css` (new — `.markdown-body` + theme custom properties)
