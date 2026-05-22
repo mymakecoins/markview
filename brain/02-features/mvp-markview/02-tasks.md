@@ -60,7 +60,7 @@ else compiles without it.
 
 ## Task 2: Implement `lib/markdown.ts` — single sanitize wrapper + `marked` config
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/lib/markdown.ts` (new)
