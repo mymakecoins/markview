@@ -163,7 +163,7 @@ Depends on `lib/markdown.ts` (Task 2). This is the single, unbypassable Markdown
 
 ## Task 5: Implement `useTheme` hook
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/hooks/useTheme.ts` (new)
