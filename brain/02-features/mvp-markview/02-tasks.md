@@ -196,7 +196,7 @@ Depends on localStorage availability (not on the `useLocalStorage` hook — writ
 
 ## Task 6: Implement `useScrollSync` hook
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/hooks/useScrollSync.ts` (new)
