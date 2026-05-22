@@ -266,7 +266,7 @@ sole `dangerouslySetInnerHTML` site and must never receive raw markdown.
 
 ## Task 8: Wire everything in `<App>` integration
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/App.tsx` (modify — replaces Task 1 placeholder)
