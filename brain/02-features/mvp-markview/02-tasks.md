@@ -130,7 +130,7 @@ Ordered before `useMarkdown`/`useTheme` by independence; it has zero internal de
 
 ## Task 4: Implement `useMarkdown` hook
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/hooks/useMarkdown.ts` (new)
