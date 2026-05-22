@@ -96,7 +96,7 @@ that runs `parse → sanitize`. Must exist before any hook or component that tou
 
 ## Task 3: Implement `useLocalStorage` hook
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/hooks/useLocalStorage.ts` (new)
