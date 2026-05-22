@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import EditorPane from './components/EditorPane';
 import PreviewPane from './components/PreviewPane';
 import Toolbar from './components/Toolbar';
+import { useFileOpen } from './hooks/useFileOpen';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useMarkdown } from './hooks/useMarkdown';
 import { useScrollSync } from './hooks/useScrollSync';
@@ -17,10 +18,14 @@ function App() {
   const previewRef = useRef<HTMLDivElement>(null);
 
   const { onEditorScroll, onPreviewScroll } = useScrollSync(editorRef, previewRef);
+  const { openFile, isLoading: fileLoading } = useFileOpen({
+    onLoad: setMarkdown,
+    isDirty: () => markdown.trim() !== '',
+  });
 
   return (
     <div className="flex flex-col h-screen overflow-hidden bg-theme-bg text-theme-text">
-      <Toolbar theme={theme} onToggleTheme={toggleTheme} />
+      <Toolbar theme={theme} onToggleTheme={toggleTheme} onOpenFile={openFile} fileLoading={fileLoading} />
       <div className="flex flex-1 min-h-0 overflow-hidden">
         <EditorPane
           value={markdown}
