@@ -229,7 +229,7 @@ re-renders. Ordered before components because they consume its returned handlers
 
 ## Task 7: Implement presentational components — `<ThemeToggle>`, `<Toolbar>`, `<EditorPane>`, `<PreviewPane>`
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/components/ThemeToggle.tsx` (new)
