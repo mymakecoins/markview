@@ -332,7 +332,7 @@ targets real rendered structure.
 
 ## Task 10: End-to-end smoke test (`App.test.tsx`)
 
-**Status:** [ ]
+**Status:** [x]
 
 **Files affected:**
 - `src/App.test.tsx` (new)
