@@ -9,7 +9,7 @@ type PreviewPaneProps = {
 function PreviewPane({ html, previewRef, onScroll }: PreviewPaneProps) {
   return (
     <div
-      className="markdown-body"
+      className="markdown-body flex-1 overflow-y-auto min-w-0 p-6"
       ref={previewRef}
       onScroll={onScroll}
       dangerouslySetInnerHTML={{ __html: html }}

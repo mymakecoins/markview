@@ -14,6 +14,7 @@ function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
       aria-pressed={isDark}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       onClick={onToggle}
+      className="p-1.5 rounded-md text-base leading-none hover:bg-theme-code-bg transition-colors cursor-pointer"
     >
       {isDark ? '☀️' : '🌙'}
     </button>

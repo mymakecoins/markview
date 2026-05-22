@@ -19,19 +19,21 @@ function App() {
   const { onEditorScroll, onPreviewScroll } = useScrollSync(editorRef, previewRef);
 
   return (
-    <div>
+    <div className="flex flex-col h-screen overflow-hidden bg-theme-bg text-theme-text">
       <Toolbar theme={theme} onToggleTheme={toggleTheme} />
-      <EditorPane
-        value={markdown}
-        onChange={setMarkdown}
-        editorRef={editorRef}
-        onScroll={onEditorScroll}
-      />
-      <PreviewPane
-        html={html}
-        previewRef={previewRef}
-        onScroll={onPreviewScroll}
-      />
+      <div className="flex flex-1 min-h-0 overflow-hidden">
+        <EditorPane
+          value={markdown}
+          onChange={setMarkdown}
+          editorRef={editorRef}
+          onScroll={onEditorScroll}
+        />
+        <PreviewPane
+          html={html}
+          previewRef={previewRef}
+          onScroll={onPreviewScroll}
+        />
+      </div>
     </div>
   );
 }

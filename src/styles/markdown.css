@@ -1,3 +1,15 @@
+/* Fallback — applies before data-theme is set (first paint) */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #24292f;
+  --color-border: #d0d7de;
+  --color-code-bg: #f6f8fa;
+  --color-blockquote-border: #d0d7de;
+  --color-blockquote-text: #57606a;
+  --color-link: #0969da;
+  --color-heading-border: #d0d7de;
+}
+
 /* Theme custom properties — consumed by .markdown-body and Tailwind selector dark mode */
 [data-theme="light"] {
   --color-bg: #ffffff;
